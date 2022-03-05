@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style_topics.css">
+        <title>
+            Physics
+        </title>
+        <script>
+
+            function postMessage(){
+                var x=document.getElementById("message").value;
+
+                if(x==""){
+                    alert("Please enter something");
+                }
+
+                else{
+                    var post=document.getElementById("post");
+                    document.getElementById("post").innerHTML="Posted by:"+"<br>"+x+"<br>"+"<input type='button' value='Delete Post' class='deletebutton' onclick='deletePost()'>&nbsp&nbsp&nbsp&nbsp<input type='button' value='Reply' class='replybutton' onclick='replyPost()'>";
+                    document.getElementById("message").value="";
+                }
+            }
+
+            function clearMessage(){
+                document.getElementById("message").value="";
+            }
+
+            function deletePost(){
+
+            }
+        
+        </script>
+    </head>
+    <body>
+        <section class="heading">
+            <p><h1> Physics</h1></p>
+        </section>
+
+        <section>
+            <div >
+                <p>
+                <textarea cols=100 rows=8 placeholder='Enter your thoughts here' class='textareafont' id='message'></textarea><br>
+                <input type='button' value='Post' class='postbutton' onclick=postMessage()>
+                &nbsp&nbsp&nbsp
+                <input type='button' value='Clear' class='cleartextbutton' onclick=clearMessage()>
+                </p>
+            </div>
+            <div id="textbox"></div>
+            <div id="post" class="postMessage"></div>
+
+        </section>
+
+    </body>
+</html>

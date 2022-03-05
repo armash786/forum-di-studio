@@ -1,0 +1,127 @@
+@font-face {
+    font-family:OpenSans-Regular;
+    src: url("OpenSans-Regular.ttf");
+}
+
+body{
+    margin: 0%;
+    color: white;
+    background: #202731;
+}
+
+section{
+    position: relative;
+    min-height:100px;
+    display: flexbox;
+    padding: 100px 10vw;
+}
+
+a{
+    display: inline-block;
+    margin-right: 210px;
+}
+/* user defined classes*/
+
+.blue{
+    background: #10417A;
+}
+
+.red{
+    background: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.purple{
+    background: #934DA1;
+}
+.dark{
+    background: #202731;
+}
+
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 211px;
+}
+
+.wave1 .shape-fill {
+    fill: #10417A;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 81px;
+}
+
+.wave2 .shape-fill {
+    fill: orange;
+}
+
+.wave3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 81px;
+    transform: rotateY(180deg);
+}
+
+.wave3 .shape-fill {
+    fill: #934DA1;
+}
+
+.wave4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave4 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 81px;
+}
+
+.wave4 .shape-fill {
+    fill: #202731;
+}
+

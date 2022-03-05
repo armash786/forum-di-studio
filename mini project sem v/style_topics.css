@@ -1,0 +1,101 @@
+@font-face {
+    font-family:OpenSans-Regular;
+    src: url("OpenSans-Regular.ttf");
+}
+
+
+/* default tags styling*/
+
+section{
+    position: relative;
+    display: flexbox;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    padding-bottom: 0%;
+    font-size: 30px;
+    margin: 0%;
+    font-family:OpenSans-Regular;
+    align-self: center;   
+}
+
+body {
+    background-color: khaki;
+}
+
+textarea:focus{
+    background-color: lightgray;
+}
+
+/* user define class styling*/
+
+.heading{
+    background-color: darkorange;
+    color: black;
+    padding-top: 0%;
+    font-size: 30px;
+    margin: 0%;
+    font-family:OpenSans-Regular;
+}
+
+.footerContent{
+    font-family:OpenSans-Regular;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0%;
+    position: bottom;
+}
+
+.textareafont{
+    font-size: 18px;
+}
+
+.postbutton{
+    mask-position: 0%;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5%;
+    width: fit-content;
+    background-color: blue;
+    color: white;
+}
+
+.cleartextbutton{
+    mask-position: 0%;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5%;
+    width: fit-content;
+    background-color: blue;
+    color: white;
+}
+
+.postMessage{
+    font-size: 18px;
+    background-color: #BBC01E;
+    font-family: OpenSans-Regular;
+    width: 600px;
+}
+
+.deletebutton{
+    mask-position: 0%;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5%;
+    width: fit-content;
+    background-color: rgb(198, 207, 119);
+    color: black;
+}
+
+.replybutton{
+    mask-position: 0%;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5%;
+    width: fit-content;
+    background-color: rgb(198, 207, 119);
+    color: black;
+}

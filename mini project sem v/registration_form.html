@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration-Form</title>
+        <link rel="stylesheet" href="style_login.css">
+    </head>
+    <body>
+        <section>
+            <center>
+                <form name="RegisterDetails" action="" method="" id="reg-form">
+                    <fieldset><legend align="center"><b>Registration</b></legend>
+                    <table>
+                        <tr>
+                            <td colspan="3" class="heading">FORUM di STUDIO</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                                <td>
+                                    <input type="text" autocomplete="off" id="username" name="user" placeholder="Enter username Here">
+                                </td>
+                        </tr>
+                        <tr>
+                            <br>
+                        </tr>
+
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" autocomplete="off" name="user_password" id="password" placeholder="Enter Password Here"></td>
+                        </tr>
+                        <tr>
+ 
+                            <tr>
+                                <td align="center" colspan="2">
+                                    <input type="submit" name="submit" value="Register" class="RegisterButton" onclick="processForm();formcheck()">
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                Already have an account?<a href="login_form.html">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                </form>
+                <script>
+                    function processForm(){
+                        myform = document.RegisterDetails;
+                        if(myform.user.value==""||myform.user_pass.value==""||myform.user_mail.value==""||myform.user_mob.value==""){
+                            alert("Please fill every detail");
+                        }
+                        else{
+                            alert("Welcome "+myform.user.value+" to our website");
+                        }
+                    }
+
+                    /*  Form validation */
+
+                    /* 
+
+                    const form = document.getElementById('reg-form');
+                    form.addEventListener('submit', registerUser);
+
+                    async function registerUser(even){
+                        event.preventDefault();
+
+                        const username=document.getElementById('username').value;
+                        const password=document.getElementById('password').value;
+
+                        const result = await fetch('/api/register',{
+                            method:'POST',
+                            headers:{
+                                'Content-Type':'application/jason'
+                            },
+                            body: JSON.stringify({
+                                username,
+                                password
+                            })
+                        }).then((res) => res.json())
+
+                        console.log(result)
+                    }*/
+                </script>
+            </center>
+        </section>
+    </body>
+</html>
